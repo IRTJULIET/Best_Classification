@@ -78,7 +78,7 @@ try:
             except:
                 print('Upload a Proper File ')
         if st.checkbox("View Sample dataset", False):
-            st.subheader("Sample Diabetes Dataset")
+            st.subheader("Dataset")
             st.write(sample_df)
 
 
