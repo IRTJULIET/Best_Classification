@@ -62,13 +62,13 @@ try:
     #LOADING FILE.
         @st.cache(persist = True)
         def sample_load_data():
-            sample_data = pd.read_csv('dataclass_test.csv')
+            sample_data = pd.read_csv('sampleDiabetes.csv')
             return sample_data
 
         sample_df = sample_load_data()
 
         def test_data():
-            tdata = pd.read_csv('dataclass_test.csv')
+            tdata = pd.read_csv('sampleDiabetes.csv')
             return tdata
 
         def load_data():
@@ -78,7 +78,7 @@ try:
             except:
                 print('Upload a Proper File ')
         if st.checkbox("View Sample dataset", False):
-            st.subheader("Dataset")
+            st.subheader("Sample Diabetes Dataset")
             st.write(sample_df)
 
 
